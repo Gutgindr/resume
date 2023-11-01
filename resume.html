@@ -6,64 +6,99 @@
     <meta name="keywords" content="резюме, чайкин, дмитрий, сергеевич, html, python">
     <meta name="description" content="Это сайт-резюме, здесь нет ничего интересного, если вы не работодатель">
     <title>Сайт-резюме</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="foto.jpg" alt="Здесь было моё фото" width="300">
-    <h1>Дмитрий Чайкин</h1>
-    <p>Я программирую на python</p>
+    <div class="container">
+        <div class="info">
+            <img src="foto.jpg" alt="Здесь было моё фото" class="avatar">
+            <div class="add_info">
+                <h1>Дмитрий Чайкин</h1>
 
-    <h3>Опыт работы</h3>
-    <table>
-        <thead>
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Время работы</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    Больница Кащенко
-                </td>
-                <td>
-                    Врач
-                </td>
-                <td>
-                    2021-2022
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <p>
-        <h2>Мои хобби:</h2>   
-        <ol>
-            <li>Путешествия</li>
-            <li>Спорт</li>
-            <li>Изучение иностранных языков</li>
-            <li>Квизы</li>
-        </ol>
-    </p>
-    <p><strong>Ссылки на мои социальные сети:</strong></p>
-    <a href="https://web.telegram.org/k/#@ChaykinDS" target="_blank">Telegram</a> | 
-    <a href="https://stepik.org/users/514838091/profile" target="_blank">Stepik</a>
 
-    <h2>Связаться со мной</h2>
-    <form action="">
-        <div>
-            <label for="name">Имя:</label>
-            <input type="text" id="name" placeholder="Введите ваше имя">
+                <div class="info_text">
+                    <p>Я ответственный, внимательный к деталям человек. Уважаю чужое мнение, иду на компромиссы, но при этом умею отстаивать свою точку зрения. Люблю цифры и всё, что с ними связанно. К работе отношусь с максимальной отдачей.</p>
+                </div>
+                <div>
+                    <h3 class="socio">Ссылки на мои социальные сети:</h3>
+                    <a href="https://web.telegram.org/k/#@ChaykinDS" target="_blank">Telegram</a> | 
+                    <a href="https://stepik.org/users/514838091/profile" target="_blank">Stepik</a>
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Введите ваш email">
+            
+        <div class="card yellow" id="hobby">
+            <h3>Мои хобби:</h3>
+            <ul>
+                <li>Путешествия</li>
+                <li>Спорт</li>
+                <li>Изучение иностранных языков</li>
+                <li>Квизы</li>
+            </ul>
         </div>
-        <div>
-            <label for="text">Сообщение:</label>
-            <br>
-            <textarea name="massage" id="text" cols="26" rows="7" placeholder="Введите ваше сообщение..."></textarea>
-        </div>
-        <div>
-            <input type="submit" value="Отправить" />
-        </div>
-    </form>
+        <div class="card">
+            <h3>Опыт работы</h3>
+                <table id="expa">
+                    <thead>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Время работы</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Больница Кащенко
+                            </td>
+                            <td>
+                                Врач
+                            </td>
+                            <td>
+                                2021-2022
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card yellow">
+                <h3>Мои курсы</h3>
+                <ul>
+                    <li>Степик-хуепик</li>
+                    <li>Скилл фактори</li>
+                    <li>дуолинго</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Пет-проекты</h3>
+                <ul>
+                    <li>сайт</li>
+                    <li>телеграмм бот</li>
+                    <li>мини-проекты</li>
+                </ul>
+            </div>
+
+        <footer class="form">
+            <h2>Связаться со мной</h2>
+            <form action="">
+                <div class="form-row">
+                    <div class="form-group" id="name">
+                        <label for="name">Имя:</label>                    
+                        <input type="text" id="name" placeholder="Введите ваше имя">
+                    </div>
+                    <div class="form-group" id="mail">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Введите ваш email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="text">Сообщение:</label>
+                    <br>
+                    <textarea name="massage" id="text" cols="26" rows="7" placeholder="Введите ваше сообщение..."></textarea>
+                </div>
+                <div>
+                    <input class='btn' type="submit" value="Отправить" />
+                </div>
+            </form>
+        </footer>
+    </div>
 </body>
 </html>
